@@ -16,11 +16,6 @@ const Header = () => {
     <header className="bg-gray-800 text-white py-4">
       <div className="container mx-auto">
         {/* Conteúdo do cabeçalho */}
-        <Link href={`/novasmetas/`}>
-              <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
-                Adicionar
-              </button>
-       </Link>
       </div>
     </header>
   );

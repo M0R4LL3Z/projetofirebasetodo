@@ -125,7 +125,7 @@ export default function Home() {
             <input
               className="border border-gray-300 w-[50%] rounded-md px-3 py-2 mb-3 text-black"
               name="active"
-              checked={true}
+              checked={false}
               id="status"
               type="checkbox"
               placeholder="status"

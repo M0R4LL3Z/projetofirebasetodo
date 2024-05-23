@@ -42,6 +42,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm:py-12">
+      <Link href={`/novasmetas/`}>
+              <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
+                Adicionar
+              </button>
+       </Link>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 m-12">
         {!loading &&
           Object.keys(places).map((userId) => (
