@@ -13,10 +13,17 @@ export const metadata: Metadata = {
 // Componente de cabeçalho
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white py-4">
-      <div className="container mx-auto">
-        {/* Conteúdo do cabeçalho */}
+    <header className="">
+      <div className=" p-5 text-xl font-serif space-x-4 flex flex-row justify-between italic">
+      <h1 className="text-2xl text-sky-950">Minibar</h1>
+      <div className="space-x-4 order-last">
+        <nav className="flex space-x-4 text-slate-600">
+          <p>Login</p>
+          <p>Registrar</p>
+        </nav>
       </div>
+      </div>
+      
     </header>
   );
 };
@@ -24,11 +31,7 @@ const Header = () => {
 // Componente de rodapé
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-4">
-      <div className="container mx-auto">
-        {/* Conteúdo do rodapé */}
-        
-      </div>
+    <footer className="">
     </footer>
   );
 };
@@ -40,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className="">
         <Header />
         {children}
         <Footer />
